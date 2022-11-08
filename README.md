@@ -14,3 +14,5 @@ Once you're satisfied with your applet, upload it to [ShinyApps.io](https://www.
 You can find the instructions for deploying your application [here](https://docs.rstudio.com/shinyapps.io/getting-started.html#working-with-shiny-for-r).
 
 When you've deployed your application, edit this README to contain a link to your applet.
+
+Molly's applet: https://mollyc.shinyapps.io/hw12-interactive-graphics-math-day-2020/
