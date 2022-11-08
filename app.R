@@ -23,7 +23,7 @@ ui <- fluidPage(
     # Sidebar with a slider input for number of bins 
     sidebarLayout(
         sidebarPanel(
-          selectInput("ingredient", "Ingredient", choices = sort(unique(drinks$ingredient)), selected = "Creme de Cacao"),
+          selectInput("drink_name", "Drink Name", choices = sort(unique(drinks$drink)), selected = "Big Red")
         ),
 
         mainPanel(
@@ -36,12 +36,12 @@ server <- function(input, output) {
   
   drk_subset <- reactive({
     drinks %>%
-      filter(ingredient == input$ingredient)
+      filter(drink == input$drink_name)
   })
 
     output$dist <- renderTable({
         drk_subset() %>%
-        select(drink, category, glass)
+        select(ingredient, glass, category)
 
     })
 }
