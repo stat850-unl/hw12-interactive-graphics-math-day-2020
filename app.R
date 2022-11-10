@@ -1,4 +1,4 @@
-# Install Libraries
+# Install Library
 library(shiny)
 library(shinythemes)
 library(tidyverse)
@@ -6,6 +6,7 @@ library(tidyverse)
 # Read in files
 drinks <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-26/cocktails.csv')
 boston_drinks <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-26/boston_cocktails.csv')
+
 
 # Create UI
 ui <- fluidPage(theme=shinytheme('yeti'),
